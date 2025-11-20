@@ -11,7 +11,11 @@ public class GameLaunch : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private Vector3 jumpStartPosition;
+
+#pragma warning disable CS0414
     [SerializeField] private float moveSpeed = 3f;
+#pragma warning restore CS0414
+
     [SerializeField] private float movementDuration = 2f;
 
     [Header("Jump Settings")]
@@ -45,7 +49,9 @@ public class GameLaunch : MonoBehaviour
         Complete
     }
 
+#pragma warning disable CS0414
     private SlimeState currentState = SlimeState.Moving;
+#pragma warning restore CS0414
 
     void Start()
     {
@@ -213,10 +219,10 @@ public class GameLaunch : MonoBehaviour
         }
 
         // Draw labels (only visible in Scene view)
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.Handles.Label(startPosition + Vector3.up * 0.5f, "Start");
         UnityEditor.Handles.Label(jumpStartPosition + Vector3.up * 0.5f, "Jump Start");
         UnityEditor.Handles.Label(spikePosition + Vector3.up * 0.5f, "Spike (Death)");
-        #endif
+#endif
     }
 }

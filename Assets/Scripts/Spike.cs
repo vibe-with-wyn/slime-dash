@@ -36,7 +36,7 @@ public class Spike : MonoBehaviour
         if (processing.Contains(player)) return;
         processing.Add(player);
 
-        var lives = FindObjectOfType<LivesController>();
+        var lives = Object.FindFirstObjectByType<LivesController>();
         if (lives != null)
         {
             lives.HandlePlayerDeath(player);

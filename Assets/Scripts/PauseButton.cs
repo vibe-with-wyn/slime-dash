@@ -5,7 +5,7 @@ public class PauseButton : MonoBehaviour
     // Called by UI Button OnClick
     public void OnPausePressed()
     {
-        var pm = FindObjectOfType<PauseManager>();
+        var pm = Object.FindFirstObjectByType<PauseManager>();
         if (pm != null)
         {
             pm.TogglePause();
