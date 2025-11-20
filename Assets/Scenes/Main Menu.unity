@@ -1010,6 +1010,7 @@ GameObject:
   - component: {fileID: 1681156963}
   - component: {fileID: 1681156962}
   - component: {fileID: 1681156961}
+  - component: {fileID: 1681156964}
   m_Layer: 8
   m_Name: Tutorial Button
   m_TagString: Untagged
@@ -1119,6 +1120,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681156959}
   m_CullTransparentMesh: 1
+--- !u!114 &1681156964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681156959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cede7c5931fa5ce49bde7a51ff8288ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlimeDash::ButtonSelectSfx
+  selectClip: {fileID: 8300000, guid: 907ecc55967820a439b982635b7a4614, type: 3}
+  volume: 1
+  audioSource: {fileID: 0}
+  playOnPointerEnter: 1
+  playOnSelect: 1
 --- !u!1001 &1748742038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,6 +1263,7 @@ GameObject:
   - component: {fileID: 1778389409}
   - component: {fileID: 1778389408}
   - component: {fileID: 1778389407}
+  - component: {fileID: 1778389410}
   m_Layer: 8
   m_Name: Start Game Button
   m_TagString: Untagged
@@ -1354,6 +1373,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778389405}
   m_CullTransparentMesh: 1
+--- !u!114 &1778389410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778389405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cede7c5931fa5ce49bde7a51ff8288ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SlimeDash::ButtonSelectSfx
+  selectClip: {fileID: 8300000, guid: 907ecc55967820a439b982635b7a4614, type: 3}
+  volume: 1
+  audioSource: {fileID: 0}
+  playOnPointerEnter: 0
+  playOnSelect: 1
 --- !u!1 &2093464655
 GameObject:
   m_ObjectHideFlags: 0
