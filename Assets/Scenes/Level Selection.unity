@@ -551,8 +551,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289901234
-  m_fontColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    rgba: 4293322470
+  m_fontColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -935,7 +935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7899345574418731125, guid: 54da63df0cc8580458ddfeb18261da58, type: 3}
+  m_Sprite: {fileID: -5643054712996637732, guid: 54da63df0cc8580458ddfeb18261da58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7899345574418731125, guid: 54da63df0cc8580458ddfeb18261da58, type: 3}
+  m_Sprite: {fileID: -5643054712996637732, guid: 54da63df0cc8580458ddfeb18261da58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1508,6 +1508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9b112be2a114e4fbee9ed6892ce4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  resetCoinsOnAwake: 0
+  clearPlayerPrefsWhenReset: 1
 --- !u!4 &1409001033
 Transform:
   m_ObjectHideFlags: 0
@@ -2084,7 +2086,7 @@ RectTransform:
   m_GameObject: {fileID: 2114952004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 406.4616, y: 203.23077, z: 1.016154}
+  m_LocalScale: {x: 449.71167, y: 180.36731, z: 1.016154}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 722960996}
