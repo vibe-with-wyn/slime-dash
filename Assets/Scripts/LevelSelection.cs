@@ -29,7 +29,8 @@ public class LevelSelection : MonoBehaviour
         // Find all LevelButton components if not assigned
         if (levelButtons == null || levelButtons.Length == 0)
         {
-            levelButtons = FindObjectsOfType<LevelButton>();
+            levelButtons = levelButtons = GameObject.FindObjectsByType<LevelButton>(FindObjectsSortMode.None);
+
         }
 
         // Initialize each level button
