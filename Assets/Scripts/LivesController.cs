@@ -10,10 +10,13 @@ using System.Linq;
 public class LivesController : MonoBehaviour
 {
     [Header("Lives UI")]
+    [Tooltip("UI Images for hearts in order (left => right). Preferred when using a Canvas.")]
+    [SerializeField] private Image[] heartImages;
+
     [Tooltip("List the heart SpriteRenderers in order (left => right). They will be disabled as lives are lost.")]
     [SerializeField] private SpriteRenderer[] heartSprites;
 
-    [Tooltip("Alternative: drag the heart GameObjects (each must have a SpriteRenderer). Used when heartSprites is not assigned.")]
+    [Tooltip("Alternative: drag the heart GameObjects (each must have a SpriteRenderer or UI Image). Used when arrays are not assigned.")]
     [SerializeField] private GameObject[] heartObjects;
 
     [Tooltip("Name of scene to load when lives reach zero. Leave empty to just log Game Over.")]
@@ -39,29 +42,58 @@ public class LivesController : MonoBehaviour
 
     private void Awake()
     {
-        // Prefer explicit SpriteRenderer array if provided
-        if (heartSprites == null || heartSprites.Length == 0)
+        // Prefer explicit UI Image array if provided
+        if (heartImages == null || heartImages.Length == 0)
         {
-            // If heartObjects provided, extract their SpriteRenderers
             if (heartObjects != null && heartObjects.Length > 0)
             {
-                heartSprites = heartObjects.Select(go =>
+                heartImages = heartObjects.Select(go =>
                 {
                     if (go == null) return null;
-                    var sr = go.GetComponent<SpriteRenderer>();
-                    if (sr == null)
-                        Debug.LogWarning($"LivesController: heart GameObject '{go.name}' has no SpriteRenderer.");
-                    return sr;
-                }).Where(s => s != null).ToArray();
+                    var img = go.GetComponent<Image>();
+                    return img;
+                }).Where(i => i != null).ToArray();
             }
             else
             {
-                // fallback: auto-find children sprite renderers (existing behavior)
-                heartSprites = GetComponentsInChildren<SpriteRenderer>().Where(s => s.gameObject != this.gameObject).ToArray();
+                // fallback: auto-find children UI Images
+                heartImages = GetComponentsInChildren<Image>(true)
+                    .Where(i => i.gameObject != this.gameObject)
+                    .ToArray();
             }
         }
 
-        maxLives = Mathf.Max(heartSprites != null ? heartSprites.Length : 0, 0);
+        // If no UI Images are available, fall back to SpriteRenderers
+        if (heartImages == null || heartImages.Length == 0)
+        {
+            // Prefer explicit SpriteRenderer array if provided
+            if (heartSprites == null || heartSprites.Length == 0)
+            {
+                // If heartObjects provided, extract their SpriteRenderers
+                if (heartObjects != null && heartObjects.Length > 0)
+                {
+                    heartSprites = heartObjects.Select(go =>
+                    {
+                        if (go == null) return null;
+                        var sr = go.GetComponent<SpriteRenderer>();
+                        if (sr == null)
+                            Debug.LogWarning($"LivesController: heart GameObject '{go.name}' has no SpriteRenderer.");
+                        return sr;
+                    }).Where(s => s != null).ToArray();
+                }
+                else
+                {
+                    // fallback: auto-find children sprite renderers (existing behavior)
+                    heartSprites = GetComponentsInChildren<SpriteRenderer>(true)
+                        .Where(s => s.gameObject != this.gameObject)
+                        .ToArray();
+                }
+            }
+        }
+
+        maxLives = Mathf.Max(
+            heartImages != null && heartImages.Length > 0 ? heartImages.Length : (heartSprites != null ? heartSprites.Length : 0),
+            0);
         currentLives = maxLives;
         RefreshHearts();
 
@@ -181,9 +213,21 @@ public class LivesController : MonoBehaviour
 
     private void RefreshHearts()
     {
+        if (heartImages != null && heartImages.Length > 0)
+        {
+            for (int i = 0; i < heartImages.Length; i++)
+            {
+                if (heartImages[i] == null) continue;
+                heartImages[i].enabled = i < currentLives;
+            }
+
+            return;
+        }
+
         if (heartSprites == null) return;
         for (int i = 0; i < heartSprites.Length; i++)
         {
+            if (heartSprites[i] == null) continue;
             heartSprites[i].enabled = i < currentLives;
         }
     }
