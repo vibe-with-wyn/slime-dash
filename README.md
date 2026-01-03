@@ -115,6 +115,8 @@
 | **Engine** | Unity 2021+ |
 | **Language** | C# 9.0 (.NET Framework 4.7.1) |
 | **Platforms** | WebGL, Android |
+| **APK Size** | ~51 MB |
+| **Min Android** | 7.0 (API 24) |
 | **Resolution** | 1920×1080 (Landscape) |
 | **WebGL Size** | ~50 MB (Brotli compressed) |
 | **Testing** | NUnit - 12+ unit tests |
