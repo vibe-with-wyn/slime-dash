@@ -263,7 +263,6 @@ If you enjoy Slime Dash:
 - 🎨 **New Slime Skins** - Unlockable character variants
 - 🏆 **Leaderboards** - Global high scores
 - 🎵 **Music System** - Background music tracks
-- 📱 **Android APK Release** - Downloadable mobile version
 - 🌐 **Localization** - Multi-language support
 
 ### Known Improvements
