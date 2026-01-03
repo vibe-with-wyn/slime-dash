@@ -5,7 +5,7 @@
 [![Unity](https://img.shields.io/badge/Unity-2021+-blue?style=for-the-badge&logo=unity)](https://unity.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **A colorful 2D mobile platformer featuring precise jumping, coin collection, and challenging level progression !**
+> **A colorful 2D mobile platformer featuring precise jumping, coin collection, and challenging level progression**
 
 ---
 
@@ -35,10 +35,6 @@
 - ✅ Instant play - loads in seconds
 - ⚡ Hardware acceleration recommended
 
-### Android APK (Coming Soon)
-- Download link will be available in [Releases](https://github.com/vibe-with-wyn/slime-dash/releases)
-- Minimum Android 7.0 (API 24)
-- 150MB free storage
 
 ### Download Android APK
 **[📥 Download Latest Release (v1.0.0)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)**
