@@ -1,10 +1,11 @@
 # Slime Dash 🎮
 
+[![Download APK](https://img.shields.io/badge/Download-Android%20APK-green?style=for-the-badge&logo=android)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)
 [![Play on itch.io](https://img.shields.io/badge/Play-itch.io-red?style=for-the-badge&logo=itch.io)](https://vibe-with-wyn.itch.io/slime-dash)
 [![Unity](https://img.shields.io/badge/Unity-2021+-blue?style=for-the-badge&logo=unity)](https://unity.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **A colorful 2D mobile platformer featuring precise jumping, coin collection, and challenging level progression**
+> **A colorful 2D mobile platformer featuring precise jumping, coin collection, and challenging level progression !**
 
 ---
 
@@ -38,6 +39,21 @@
 - Download link will be available in [Releases](https://github.com/vibe-with-wyn/slime-dash/releases)
 - Minimum Android 7.0 (API 24)
 - 150MB free storage
+
+### Download Android APK
+**[📥 Download Latest Release (v1.0.0)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)**
+
+### Requirements
+- Android 7.0 (Nougat) or higher
+- 150MB free storage
+- Touch-screen device
+- Landscape orientation recommended
+
+### Installation
+1. Download `SlimeDash.apk` from [Releases](https://github.com/vibe-with-wyn/slime-dash/releases)
+2. Enable **Settings > Security > Install Unknown Apps** (allow for your browser)
+3. Tap the downloaded APK file
+4. Tap **Install**, then **Open**
 
 ---
 
