@@ -28,7 +28,7 @@
 ## 📱 Play Now
 
 ### WebGL (Browser)
-**[🎮 Play on itch.io](https://vibe-with-wyn.itch.io/slime-dash)**
+**🎮 [Play on itch.io](https://vibe-with-wyn.itch.io/slime-dash)**
 
 - ✅ No installation required
 - ✅ Works on desktop and mobile browsers
@@ -37,7 +37,7 @@
 
 
 ### Download Android APK
-**[📥 Download Latest Release (v1.0.0)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)**
+**📥 [Download Latest Release (v1.0.0)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)**
 
 ### Requirements
 - Android 7.0 (Nougat) or higher
@@ -114,7 +114,7 @@
 |---------------|---------|
 | **Engine** | Unity 2021+ |
 | **Language** | C# 9.0 (.NET Framework 4.7.1) |
-| **Platforms** | WebGL, Android (Planned) |
+| **Platforms** | WebGL, Android |
 | **Resolution** | 1920×1080 (Landscape) |
 | **WebGL Size** | ~50 MB (Brotli compressed) |
 | **Testing** | NUnit - 12+ unit tests |
@@ -167,7 +167,7 @@
 2. Open project in Unity
 
 3. Configure **Edit > Project Settings > Player > WebGL**:
-   - Company Name: `VibWithWyn`
+   - Company Name: `VibeWithWyn`
    - Product Name: `Slime Dash`
    - WebGL Memory Size: `512` MB
    - Compression Format: `Brotli`
@@ -179,11 +179,11 @@
 
 6. Upload to itch.io or host on Netlify/GitHub Pages
 
-### Android Build (Planned)
+### Android Build
 1. Install **Android Build Support** module
 2. Switch Platform to **Android**
 3. Configure:
-   - Bundle Identifier: `com.vibwithwyn.slimedash`
+   - Bundle Identifier: `com.vibewithwyn.slimedash`
    - Minimum API Level: `24`
    - Orientation: `Landscape`
 4. **Build** → Save as `.apk`
@@ -271,6 +271,9 @@ If you enjoy Slime Dash:
 - Additional animation polish
 - Enhanced tutorial/onboarding
 - More sound effects and visual feedback
+
+## ⚠️ Rapid Development Disclaimer
+This game was created rapidly, so it may contain small bugs or inconsistencies. If you encounter issues, please report them via [GitHub Issues](https://github.com/vibe-with-wyn/slime-dash/issues).
 
 ---
 
