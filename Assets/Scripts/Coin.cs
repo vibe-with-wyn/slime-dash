@@ -200,6 +200,7 @@ public class Coin : MonoBehaviour
 
         // 2) Search for TMP objects with the expected name that are NOT children of a Coin instance
         var allTmps = Object.FindObjectsByType<TextMeshProUGUI>(FindObjectsSortMode.None);
+        
         foreach (var tm in allTmps)
         {
             if (tm.gameObject.name != DEFAULT_UI_NAME) continue;
