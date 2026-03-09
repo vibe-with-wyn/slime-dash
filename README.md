@@ -1,6 +1,6 @@
 # Slime Dash 🎮
 
-There is currently an issue with itch.io web play, which is being addressed.
+There is currently an issue with itch.io web play, which is being addressed. To play or test the game install it on your android device for now.
 
 [![Download APK](https://img.shields.io/badge/Download-Android%20APK-green?style=for-the-badge&logo=android)](https://github.com/vibe-with-wyn/slime-dash/releases/latest)
 [![Play on itch.io](https://img.shields.io/badge/Play-itch.io-red?style=for-the-badge&logo=itch.io)](https://vibe-with-wyn.itch.io/slime-dash)
