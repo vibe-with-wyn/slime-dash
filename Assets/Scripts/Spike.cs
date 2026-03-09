@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Attach this to spike GameObjects (PolygonCollider2D). Handles both trigger and collision cases.
+// Handles both trigger and collision cases.
 [RequireComponent(typeof(Collider2D))]
 public class Spike : MonoBehaviour
 {
